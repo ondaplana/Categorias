@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_save"
+          android:icon="@drawable/ic_menu_save"
+          android:alphabeticShortcut='s'
+          android:title="@string/menu_guardar" />
+    <item android:id="@+id/menu_add_field"
+          android:icon="@drawable/ic_menu_compose"
+          android:alphabeticShortcut='a'
+          android:title="@string/menu_insertar_campo" />
+    <group android:id="@+id/menu_group_edit">
+        <item android:id="@+id/menu_delete"
+              android:icon="@drawable/ic_menu_delete"
+              android:title="@string/menu_borrar" />
+    </group>
+    <group android:id="@+id/menu_group_insert">
+        <item android:id="@+id/menu_discard"
+              android:icon="@drawable/ic_menu_discard"
+              android:title="@string/menu_descartar" />
+    </group>
+</menu>

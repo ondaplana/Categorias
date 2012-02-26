@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.gluetech.categorias" >
+    
+    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="10"/>
+    
+    <application android:icon="@drawable/app_notes"
+        android:label="@string/nombre_applicacion" >
+        
+        <provider android:name=".provider.CategoriasProvider"
+            android:authorities="es.gluetech.categorias.categoriasprovider" />
+        
+        <provider android:name=".provider.CamposCategoriaProvider"
+            android:authorities="es.gluetech.categorias.camposcategoriaprovider" />
+     
+        <provider android:name=".provider.TiposCampoCategoriaProvider"
+            android:authorities="es.gluetech.categorias.tiposcampocategoriaprovider" />
+        
+        <provider android:name=".provider.DocumentosCategoriaProvider"
+            android:authorities="es.gluetech.categorias.documentoscategoriaprovider" />
+            
+        <provider android:name=".provider.CamposDocumentoCategoriaProvider"
+            android:authorities="es.gluetech.categorias.camposdocumentocategoriaprovider" />
+        
+        <activity android:name=".activity.CategoriasListaActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:label="@string/titulo_lista_categorias">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:label="@string/evento_editar_categoria">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.gluetech.categoria" />
+            </intent-filter>            
+        </activity>
+        
+        <activity android:name=".activity.CategoriaEditorActivity"
+            android:theme="@android:style/Theme.Light"
+            android:configChanges="keyboardHidden|orientation">
+            <!-- This filter says that we can view or edit the data of
+                 a single note -->
+            <intent-filter android:label="@string/evento_editar_categoria">
+                <action android:name="android.intent.action.EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.gluetech.categoria" />
+            </intent-filter>
+
+            <!-- This filter says that we can create a new note inside
+                 of a directory of notes. -->
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.gluetech.categoria" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".activity.CampoEditorActivity"
+            android:theme="@android:style/Theme.Light"
+            android:configChanges="keyboardHidden|orientation">
+            <!-- This filter says that we can view or edit the data of
+                 a single note -->
+            <intent-filter android:label="@string/evento_editar_campo">
+                <action android:name="android.intent.action.EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.gluetech.categoria.campo" />
+            </intent-filter>
+
+            <!-- This filter says that we can create a new note inside
+                 of a directory of notes. -->
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.gluetech.categoria.campo" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".activity.DocumentoEditorActivity"
+            android:theme="@android:style/Theme.Light"
+            android:configChanges="keyboardHidden|orientation">
+            <!-- This filter says that we can view or edit the data of
+                 a single note -->
+            <intent-filter android:label="@string/evento_editar_categoria">
+                <action android:name="android.intent.action.EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.gluetech.categoria.documento" />
+            </intent-filter>
+
+            <!-- This filter says that we can create a new note inside
+                 of a directory of notes. -->
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.gluetech.categoria.documento" />
+            </intent-filter>
+        </activity>                    
+
+    </application>
+
+</manifest>

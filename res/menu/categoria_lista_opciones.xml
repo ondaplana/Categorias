@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_insertar_categoria"
+          android:icon="@drawable/ic_menu_categories"
+          android:alphabeticShortcut='a'
+          android:title="@string/menu_insertar_categoria" />
+    <item android:id="@+id/menu_insertar_valor"
+          android:icon="@drawable/ic_menu_compose"
+          android:alphabeticShortcut='a'
+          android:title="@string/menu_insertar_valor" />
+</menu>

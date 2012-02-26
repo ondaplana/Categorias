@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Aplicación -->
+    <string name="nombre_applicacion">Categorias</string>
+    
+    <!-- Categoria -->
+    <string name="titulo_editar_nombre_categoria">Categoria:</string>
+    <string name="titulo_lista_categorias">Categorias</string>
+    <string name="titulo_editar_categoria">Editar categoria: \"%1$s\"</string>
+    <string name="titulo_crear_categoria">Crear categoria</string>
+    
+    <!--  Valor -->
+    <string name="titulo_editar_nombre_valor">Valor:</string>
+    <string name="titulo_lista_valores">Valores</string>
+    <string name="titulo_editar_valor">Editar valor: \"%1$s\"</string>
+    <string name="titulo_crear_valor">Crear valor</string>
+    
+    <!-- Campo -->
+    <string name="titulo_editar_campo">Campo:</string>
+    <string name="titulo_crear_campo">Crear campo</string>
+    
+    <!-- Opciones de menu -->
+    <string name="menu_insertar_categoria">Añadir categoria</string>
+    <string name="menu_insertar_valor">Añadir valor</string>
+    <string name="menu_insertar_campo">Añadir campo</string>
+    <string name="menu_guardar">Guardar</string>
+    <string name="menu_borrar">Borrar</string>
+    <string name="menu_abrir">Abrir</string>
+    <string name="menu_descartar">Descartar</string>
+            
+    <!-- Etiquetas -->
+    <string name="boton_aceptar">Aceptar</string>
+    
+    <!-- Eventos -->
+    <string name="evento_editar_categoria">Editar categoria</string>
+    <string name="evento_editar_campo">Editar campo</string>
+    <string name="evento_nombre_categoria">Editar categoria</string>
+    
+    <!-- Mensajes de error -->
+    <string name="titulo_error">Error</string>
+    <string name="mensaje_error_categoria">Error cargando categoria</string>
+    <string name="mensaje_error_valor">Error cargando valor</string>
+    <string name="mensaje_error_campo">Error cargando categoria</string>
+    <string name="nada_que_guardar">No hay nada que guardar</string>
+
+    <!-- Tipos de campo -->
+    <string-array name="tipos_campo">
+        <item>Texto</item>
+        <item>Numerico</item>
+        <item>B</item>
+        <item>A</item>
+    </string-array>
+
+</resources>
